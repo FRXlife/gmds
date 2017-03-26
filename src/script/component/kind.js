@@ -8,7 +8,7 @@ class Kind extends React.Component {
   render() {
     return (
       <div className="m-kind">
-        这是分类页面
+        这是分类页面的分类
         
       </div>
     )
