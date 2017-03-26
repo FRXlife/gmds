@@ -8,7 +8,7 @@ class Cart extends React.Component {
   render() {
     return (
       <div className="m-cart">
-        这是购物车
+        这是购物车页面的
         
       </div>
     )
