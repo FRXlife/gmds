@@ -9,7 +9,7 @@ class Cart extends React.Component {
     return (
       <div className="m-cart">
         这是购物车页面的
-        
+        render
       </div>
     )
   }
