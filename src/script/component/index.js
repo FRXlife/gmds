@@ -19,26 +19,28 @@ class Index extends React.Component {
         <footer>
           <ul>
             <li>
-              <Link to="/home">
-                <i className="yo-ico">&#xe609;</i>
+              <Link to="/home" activeClassName="active">
+                <i></i>
                 <b>首页</b>
               </Link>
             </li>
             <li>
-              <Link to="/kind">
-                <i className="yo-ico">&#xe633;</i>
+              <Link to="/kind" activeClassName="active">
+                <i></i>
                 <b>分类</b>
               </Link>
             </li>
             <li>
-              <Link to="/cart">
-                <i className="yo-ico">&#xe60f;</i>
+              <Link to="/cart" activeClassName="active">
+                <i>
+                  <span>0</span>
+                </i>
                 <b>购物车</b>
               </Link>
             </li>
             <li>
-              <Link to="/my">
-                <i className="yo-ico">&#xe631;</i>
+              <Link to="/my" activeClassName="active">
+                <i></i>
                 <b>我的</b>
               </Link>
             </li>
