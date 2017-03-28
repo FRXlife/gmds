@@ -35,18 +35,16 @@
             display:block;
             width:.24rem;
             height:.24rem;
-            background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/footer/icons.png) center/96px 48px no-repeat;
+            background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/footer/icons.png) center/.96rem .48rem no-repeat;
             span{
               position: absolute;
-              min-width: 0.16rem;
-              height: 0.16rem;
+              min-width: .16rem;
+              height: .16rem;
               @include border-radius(.06rem);
               background: red;
               font-size: .1rem;
               text-align: center;
-              line-height: .1rem;
               color: #fff;
-              top: -.1rem;
               left: .2rem;
             }  
           }
@@ -69,25 +67,25 @@
           background-position:0 0;
         }
         &:nth-child(2) i{
-          background-position:-24px 0;
+          background-position:-.24rem 0;
         }
         &:nth-child(3) i{
-          background-position:-72px 0;
+          background-position:-.72rem 0;
         }
         &:nth-child(4) i{
-          background-position:-48px 0;
+          background-position:-.48rem 0;
         }
         &:nth-child(1) a.active i{
-          background-position:0 -24px;
+          background-position:0 -.24rem;
         }
         &:nth-child(2) a.active i{
-          background-position:-24px -24px;
+          background-position:-.24rem -.24rem;
         }
         &:nth-child(3) a.active i{
-          background-position:-72px -24px;
+          background-position:-.72rem -.24rem;
         }
         &:nth-child(4) a.active i{
-          background-position:-48px -24px;
+          background-position:-.48rem -.24rem;
         }
         
       }
