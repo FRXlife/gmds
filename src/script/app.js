@@ -8,6 +8,7 @@ import Home from './component/home'
 import Kind from './component/kind'
 import Cart from './component/cart'
 import My from './component/my'
+import Register from './component/register'
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -16,7 +17,8 @@ ReactDOM.render(
   		<Route path="home" component={Home}/>
   		<Route path="kind" component={Kind}/>
   		<Route path="cart" component={Cart}/>
-  		<Route path="my" component={My}/>
+      <Route path="my" component={My}/>
+        <Route path="register" component={Register}/>
   	</Route>
   </Router>
   ,

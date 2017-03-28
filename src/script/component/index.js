@@ -12,9 +12,8 @@ class Index extends React.Component {
     return (
 
       <div className="m-index">
-        <header></header>
         <section>
-          {this.props.children}  
+          {this.props.children}
         </section>
         <footer>
           <ul>
