@@ -5,21 +5,27 @@ import { Link } from 'react-router'
 class Index extends React.Component {
   constructor (props) {
     super(props)
-
+    this.state = {
+      title: "首页"
+    }
   }
-
+  clickHandler(type) {
+    this.setState({
+      title: type
+    })
+  }
   render() {
     return (
 
       <div className="m-index">
-        <header></header>
+       
         <section>
           {this.props.children}  
         </section>
         <footer>
           <ul>
             <li>
-              <Link to="/home" activeClassName="active">
+              <Link to="/home"  activeClassName="active">
                 <i></i>
                 <b>首页</b>
               </Link>
@@ -52,7 +58,7 @@ class Index extends React.Component {
     }
 
     componentDidMount() {
-
+      
 
     }
   }

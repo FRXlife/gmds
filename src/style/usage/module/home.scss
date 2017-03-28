@@ -1,0 +1,77 @@
+
+.search_header{
+	padding:.06rem 0;
+	background:#eee;
+	div.search{
+		margin: 0 .12rem;
+	    background: #fff;
+		@include border-radius(.03rem);   
+	    position: relative;
+	    height: .32rem;
+	    overflow: hidden;
+	    line-height: .32rem;
+	    font-size: .14rem;
+	    color: gray;
+	    padding-left: .32rem;
+	    i{
+	    	position: absolute;
+		    width: .16rem;
+		    height: .16rem;
+		    background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/new/icon_section_title_3.png) center/100% 100% no-repeat;
+		    -webkit-background-size: 100% 100%;
+		    left: .08rem;
+		    top: 50%;
+		    margin-top: -.08rem;
+	    }
+	}
+}
+
+.swiper{
+	width:100%;
+	height:1.8rem;
+	
+}
+.ka{
+	width:100%;
+	height:1rem;
+	a{
+		display:block;
+		width:100%;
+		height:100%;
+		img{
+			width:100%;
+			height:100%; 
+		}
+	}
+}
+.nav_wrap{
+	width:100%;
+	height:.78rem;
+	background:#fff;
+	ul{
+		padding:.1rem 0;
+		height:100%;
+		@include flexbox();
+		li{
+			@include flex();
+			height:100%;
+			a{
+				@include flexbox();
+	            @include flex-direction(column);
+	            @include align-items(center);
+	            @include justify-content(center);
+	            text-align:center;
+	            color:gray;
+	            height:100%;height:100%;
+	            img{
+	            	width:.36rem;
+	            	height:.36rem;
+	            	margin-bottom:.1rem;
+	            }
+	            span{
+	            	font-size:.12rem;
+	            }
+			}
+		}
+	}
+}

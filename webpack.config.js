@@ -22,7 +22,8 @@ module.exports = {
     proxy: {//代理使用一个真实的url
       '/api': {//统一的前缀是个属性还可以定义api2，api3
         target: 'http://localhost:3000',//看到/api就打到这个地址
-        pathRewrite: {'^/api': ''}//路径重写，把/api替换成空
+        pathRewrite: {'^/api': ''},//路径重写，把/api替换成空
+        changeOrigin:true
       }
     }
   },
@@ -87,6 +88,8 @@ module.exports = {
   externals: {//准备调一个外部的文件就不去node_modules找了减少应用的app.js的量
     'react': 'window.React',//React绑定在windows上了就暴露出去了就不会打包到app.js里了，就在外部引用
     'react-dom': 'window.ReactDOM',
-    'react-router': 'window.ReactRouter'
+    'react-router': 'window.ReactRouter',
+    'react-redux': 'window.ReactRedux',
+    'redux': 'window.Redux'
   }
 }

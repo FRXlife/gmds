@@ -1,7 +1,9 @@
-var list = require('./list.json')
+var home = require('./home.json');
+var bannerimg= require('./bannerimg3.json')
 
 module.exports = function() {
   return {
-    'list.php': list
+    'home.php': home
+
   }
 }
